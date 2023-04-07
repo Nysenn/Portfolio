@@ -33,9 +33,20 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgb(70,113,70);
-  background: linear-gradient(62deg, rgba(70,113,70,1) 0%, rgba(1,53,1,1) 100%); 
+  background: rgb(70, 113, 70);
+  background: linear-gradient(62deg, rgba(70, 113, 70, 1) 0%, rgba(1, 53, 1, 1) 100%);
 
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(127, 157, 199);
+  background: linear-gradient(62deg, rgba(127, 157, 199, 1) 0%, rgba(1, 73, 231, 1) 100%);
 }
 
 img {
@@ -53,11 +64,16 @@ h1 {
 h2 {
   color: black;
   font-family: Alkatra;
-  padding-left: 150px;
+  padding-left: 15px;
 }
 
 p {
   color: rgba(255, 0, 0, 0.466);
+}
+
+.description {
+  max-width: 80%;
+  color: #181719;
 }
 
 .col {
@@ -65,7 +81,8 @@ p {
   width: 400px;
 }
 
-.work-title {
+.work-title,
+.about-title {
   color: white;
   font-size: 30px;
   padding-bottom: 50px;
@@ -73,9 +90,9 @@ p {
 }
 
 .disclaimer {
- color: white;
- padding-top: 30px;
- padding-bottom: 30px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-body {
