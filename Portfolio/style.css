@@ -32,9 +32,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
-  background: rgb(70, 113, 70);
-  background: linear-gradient(62deg, rgba(70, 113, 70, 1) 0%, rgba(1, 53, 1, 1) 100%);
+  min-height: 100vh;
+  background: rgb(127,179,199);
+  background: linear-gradient(62deg, rgba(127,179,199,1) 0%, rgba(69,82,125,1) 100%);
 
 }
 
@@ -82,7 +84,7 @@ p {
   width: 400px;
 }
 
-.work-title{
+.work-title {
   color: white;
   font-size: 30px;
   padding-bottom: 50px;
@@ -101,6 +103,8 @@ p {
 
 .disclaimer {
   color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -114,4 +118,8 @@ p {
 
 ul {
   list-style: none;
+}
+
+#show-all {
+  margin-top: 40px;
 }

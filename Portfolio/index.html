@@ -55,7 +55,7 @@
     </div>
 
     <div class="container text-center">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="card-container">
 
         <div class="col">
           <div class="card w-100 h-100" style="width: 18rem;">
@@ -89,43 +89,11 @@
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="card w-100 h-100" style="width: 18rem;">
-            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank"><img
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" class="card-img-top"
-                alt="..."></a>
-            <div class="card-body">
-              <p class="card-text">JavaScript Calculator</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card w-100 h-100" style="width: 18rem;">
-            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank"><img
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <p class="card-text">Random quote machine</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card w-100 h-100" style="width: 18rem;">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank"><img
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" class="card-img-top"
-                alt="..."></a>
-            <div class="card-body">
-              <p class="card-text">Tribute page</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
     <div>
+      <button type="button" class="btn btn-primary" id="show-all">Show all ></button>
       <p class="disclaimer">All the projects given are not real. </p>
     </div>
 
@@ -186,10 +154,61 @@
 
       <a href="mailto:example@example.it" class="btn btn-details"><i class="bi bi-envelope"></i> <strong>eMail
         </strong> </a>
+
+      <a href="tel:0000000000" class="btn btn-details"><i class="bi bi-telephone-outbound"></i> <strong>Cell</strong></a>
     </section>
 
   </footer>
   <!-- /FOOTER -->
+
+
+  <!-- SCRIPT -->
+  <script>
+
+    const container = document.getElementById("card-container")
+    const button = document.getElementById("show-all")
+
+    button.addEventListener("click", () => {
+
+      const card = `<div class="col">
+          <div class="card w-100 h-100" style="width: 18rem;">
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank"><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">JavaScript Calculator</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card w-100 h-100" style="width: 18rem;">
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank"><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">Random quote machine</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card w-100 h-100" style="width: 18rem;">
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank"><img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body">
+              <p class="card-text">Tribute page</p>
+            </div>
+          </div>
+        </div>`
+
+      container.insertAdjacentHTML("beforeend", card)
+      button.style.display = "none";
+    })
+
+  </script>
+  <!-- /SCRIPT -->
 
 </body>
 
